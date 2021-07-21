@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: olivier;
+    src: url(../fuentes/olivier.ttf);
+}
+
+@font-face {
+    font-family: starwars;
+    src: url(../fuentes/starwars.ttf);
+}
+
+@font-face {
+    font-family: starwars2;
+    src: url(../fuentes/starwars2.ttf);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.logo {
+    font-family: olivier;
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 150px;
+    height: 500px;
+    background: rgb(0, 0, 0);
+}
+
+.cero figure {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.cero figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.cero figure:hover>a img {
+    transform: scale(1.5);
+}
+
+.cero figure a .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.cero figure:hover>a .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cero figure:hover>a .capa h1 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.cero figure:hover>a .capa h1 {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: starwars;
+    color: white;
+    margin-top: 50px;
+    transition: all 500ms ease-out;
+}
+
+.cero figure:hover>a .capa p {
+    font-family: starwars2;
+    color: white;
+    font-size: 30px;
+    line-height: 1.5;
+    width: 100%;
+    margin: auto;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5 {
+    margin: 1vh;
+    width: 19%;
+    height: 150px;
+}
+
+.p1 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p1 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p1 a img:hover {
+    transform: scale(1.1);
+}
+
+.p2 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p2 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p2 a img:hover {
+    transform: scale(1.1);
+}
+
+.p3 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p3 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p3 a img:hover {
+    transform: scale(1.1);
+}
+
+.p4 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p4 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p4 a img:hover {
+    transform: scale(1.1);
+}
+
+.p5 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p5 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p5 a img:hover {
+    transform: scale(1.1);
+}
+
+.p6,
+.p7,
+.p8,
+.p9,
+.p10 {
+    margin: 1vh;
+    width: 19%;
+    height: 150px;
+}
+
+.p6 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p6 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p6 a img:hover {
+    transform: scale(1.1);
+}
+
+.p7 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p7 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p7 a img:hover {
+    transform: scale(1.1);
+}
+
+.p8 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p8 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p8 a img:hover {
+    transform: scale(1.1);
+}
+
+.p9 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p9 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p9 a img:hover {
+    transform: scale(1.1);
+}
+
+.p10 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p10 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p10 a img:hover {
+    transform: scale(1.1);
+}
+
+.p11,
+.p12,
+.p13,
+.p14,
+.p15 {
+    margin: 1vh;
+    width: 19%;
+    height: 150px;
+}
+
+.p11 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p11 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p11 a img:hover {
+    transform: scale(1.1);
+}
+
+.p12 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p12 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p12 a img:hover {
+    transform: scale(1.1);
+}
+
+.p13 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p13 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p13 a img:hover {
+    transform: scale(1.1);
+}
+
+.p14 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p14 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p14 a img:hover {
+    transform: scale(1.1);
+}
+
+.p15 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p15 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p15 a img:hover {
+    transform: scale(1.1);
+}
+
+.p16,
+.p17,
+.p18,
+.p19,
+.p20 {
+    margin: 1vh 1vh 4vh;
+    width: 19%;
+    height: 150px;
+}
+
+.p16 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p16 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p16 a img:hover {
+    transform: scale(1.1);
+}
+
+.p17 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p17 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p17 a img:hover {
+    transform: scale(1.1);
+}
+
+.p18 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p18 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p18 a img:hover {
+    transform: scale(1.1);
+}
+
+.p19 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p19 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p19 a img:hover {
+    transform: scale(1.1);
+}
+
+.p20 {
+    overflow: hidden;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.p20 a img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.p20 a img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    max-width: 50px 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: rgb(49, 49, 49);
+}
+
+footer p {
+    color: white;
+    margin: 5px 10px;
+}
